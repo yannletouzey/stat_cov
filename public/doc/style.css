@@ -1,0 +1,23 @@
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+.article {
+    margin: 1rem auto;
+    padding: 1rem;
+    transition-duration: 0.5s;
+    width: 90%;
+    min-width: 16rem;
+    max-width: 18rem;
+    border-radius: 2rem;
+    background-color: #dbdada;
+}
+.article:hover {
+    box-shadow: 10px 10px 0px 5px rgba(0,0,0,0.5);
+    scale: 1.02;
+}
+.article img {
+    border-radius: 1rem;
+    width: 100%;
+    margin: auto;
+}
