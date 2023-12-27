@@ -1,5 +1,4 @@
 import express from 'express';
-
 import router from './app/router.js';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';

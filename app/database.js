@@ -1,11 +1,14 @@
 import pg from 'pg';
+import * as dotenv from 'dotenv'; 
+
+dotenv.config(); 
 
 const client = new pg.Client({
-    host: 'localhost',
-    user: 'yzey',
-    password: 'PanaME',
-    database: 'stat_cov',
-    port: 5432
+    host: process.env.PGHOST,
+    user: process.env.PGUSER,
+    password: process.env.PGPASSWORD,
+    database: process.env.PGDATABASE,
+    port: process.env.PGPORT
 });
 client.connect();
 export default client;
