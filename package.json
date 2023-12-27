@@ -1,18 +1,26 @@
 {
-  "name": "parcel-template",
+  "type": "module",
+  "name": "stat-cov",
   "version": "1.0.0",
   "description": "",
-  "source": "src/index.html",
+  "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "start": "nodemon src/index.js",
+    "build": "parcel build src/index.js",
     "clear": "rm -rf dist && rm -rf .parcel-cache"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["data covid 19"],
+  "author": "Yann Letouzey",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
-    "parcel": "^2.8.3"
+    "parcel": "^2.8.3",
+    "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "pg": "^8.11.3"
   }
 }
